@@ -16,7 +16,7 @@ option1 = int(input('which option do you choose? \n> '))
 if option1 == 1:
     os.system('cls')
     city = input('which city do you want to search? \n> ')
-    url = f"https://api.weatherapi.com/v1/current.json?key=c0ebefebcfd64241b0a174116230203&q={city}/current.json"
+    url = f"https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q={city}/current.json"
 
     response = requests.request("GET", url)
     respjson = response.json()
