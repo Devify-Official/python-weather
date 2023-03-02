@@ -1,8 +1,11 @@
-from dotenv import load_dotenv
+import json
 import requests
 import os
 
-load_dotenv()
+with open('config.json', 'r') as f:
+    config = json.load(f)
+
+API_KEY = config['api_key']
 
 print("  _   _  U _____ u  _       _       U  ___ u ")
 print(""" |'| |'| \| ___"|/ |"|     |"|       \/"_ \/""")
@@ -20,7 +23,7 @@ if option1 == 1:
     os.system('cls')
     city = input('which city do you want to search? \n> ')
     API_KEY = os.getenv('API_KEY')
-    url = f"https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q={city}/current.json"
+    url = f"https://api.weatherapi.com/v1/current.json?key={API_KEY}&q={city}/current.json"
 
     response = requests.request("GET", url)
     respjson = response.json()
