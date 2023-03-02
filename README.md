@@ -6,7 +6,7 @@ Weather made with weatherapi and python
 
 ```pip install requests```
 
-Get api key at [weatherapi](https://weatherapi.com/) and paste it in .env file
+Get api key at [weatherapi](https://weatherapi.com/) and paste it in config.json file
 
 ## How to run 🐧
 
