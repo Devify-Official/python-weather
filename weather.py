@@ -1,5 +1,8 @@
+from dotenv import load_dotenv
 import requests
 import os
+
+load_dotenv()
 
 print("  _   _  U _____ u  _       _       U  ___ u ")
 print(""" |'| |'| \| ___"|/ |"|     |"|       \/"_ \/""")
@@ -16,6 +19,7 @@ option1 = int(input('which option do you choose? \n> '))
 if option1 == 1:
     os.system('cls')
     city = input('which city do you want to search? \n> ')
+    API_KEY = os.getenv('API_KEY')
     url = f"https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q={city}/current.json"
 
     response = requests.request("GET", url)
