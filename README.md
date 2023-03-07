@@ -4,9 +4,9 @@ Weather made with weatherapi and python
 
 ## Requirements 🔌
 
-```pip install requests```
+Console (basic version) ```pip install requests```
 
-(If you get GUI version) : ```pip install requests && pip install tkinter```
+GUI (Graphical version) : ```pip install requests && pip install tkinter```
 
 Get api key at [weatherapi](https://weatherapi.com/) and paste it in config.json file
 
