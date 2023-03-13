@@ -36,4 +36,4 @@ if option1 == 1:
     print(f'Ville : {ville}, {region}, {country} \nTemperature : {temperature} Celcius \nVitesse du vent : {vvent} km/h')
 
 
-
+print("hello")
