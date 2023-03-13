@@ -34,6 +34,3 @@ if option1 == 1:
     vvent = respjson['current']['wind_kph']
 
     print(f'Ville : {ville}, {region}, {country} \nTemperature : {temperature} Celcius \nVitesse du vent : {vvent} km/h')
-
-
-print("hello")
