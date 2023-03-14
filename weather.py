@@ -20,7 +20,7 @@ print("1. Search weather \n")
 option1 = int(input('which option do you choose? \n> '))
 
 if option1 == 1:
-    os.system('cls')
+    os.system('clear')
     city = input('which city do you want to search? \n> ')
     url = f"https://api.weatherapi.com/v1/current.json?key={API_KEY}&q={city}/current.json"
 
